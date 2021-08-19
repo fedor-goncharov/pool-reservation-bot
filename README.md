@@ -12,3 +12,4 @@ sleep in the nights and enjoy early morning swims.
   * ```reservation_bot.py``` - telegram reservation bot that interacts with the user to schedule next reservation
   * ```reservation_service.py``` - looped service which performs actual reservations from the given list
 
+For actual reservations I used Selenium module and the chromedriver.
