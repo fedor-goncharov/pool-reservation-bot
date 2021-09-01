@@ -126,7 +126,7 @@ def reservation_service(sessions_file, sessions_passed_file, config_file):
 		sessions_list = sessions_list[sessions_passed:] # removed passed ones from the list
 
 		if (len(sessions_passed_list) > configuration['max_passed_n']): # keep only limited amount of passed sessions
-			sessions_passed_list = sessions_passed_list[:-configuration['max_passed_n']]
+			sessions_passed_list = sessions_passed_list[-configuration['max_passed_n']:]
 		put_sessions_list(sessions_list, sessions_file)
 		put_sessions_list(sessions_passed_list, sessions_passed_file)
 
